@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelompok 7 Si-Aksi</title>
+    <title>Login | SI-AKSI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="ambil.html" method="get">
-        <label>Nama:</label>
-        <input  type="text" name="nama" placeholder="Masukkan Nama">
-        <label>Alamat:</label>
-        <input  type="text" name="nama" placeholder="Masukkan alamat">
-        <label>E-mail:</label>
-        <input type="text" name="nama" placeholder="Masukkan e-mail">
-        <button type="submit">Submit</button>
-    </form>
+
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Selamat Datang</h2>
+            <p class="subtitle">Sistem Informasi Edukasi & Literasi Teknologi Interaktif</p>
+
+            <div class="alert-box">
+                <strong>Catatan:</strong> Akses login hanya tersedia untuk akun yang telah diverifikasi dan diaktivasi secara manual oleh Administrator.
+            </div>
+
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="username">Nama Pengguna / Email</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan nama pengguna" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+                </div>
+                <button type="submit" class="login-btn">Masuk ke SI-AKSI</button>
+            </form>
+            
+            <p class="register-link">Belum memiliki akun? <a href="#">Daftar di sini</a></p>
+        </div>
+    </div>
+
 </body>
 </html>
