@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">SI-AKSI</a>
+        <ul class="nav-links">
+            <li><a href="#">About SI-AKSI</a></li>
+            <li>
+                <a href="#">Kategori ▾</a>
+                <div class="dropdown-content">
+                    <a href="#">Hardware</a>
+                    <a href="#">Software & Internet</a>
+                    <a href="#">Cyber Security</a>
+                    <a href="#">Artificial Intelligence</a>
+                </div>
+            </li>
+            <li><a href="team.html">Meet Our Team</a></li>
+        </ul>
+        <div class="nav-auth">
+            <a href="index.html" class="btn-nav-login">Login</a>
+            <a href="regis.html" class="btn-nav-register">Daftar</a>
+        </div>
+    </nav>
 
     <div class="login-container">
         <div class="login-card">
@@ -17,7 +37,7 @@
                 <strong>Catatan:</strong> Akses login hanya tersedia untuk akun yang telah diverifikasi dan diaktivasi secara manual oleh Administrator.
             </div>
 
-            <form action="#" method="POST">
+            <form id="form-login" action="#" method="POST">
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Masukkan email" required>
@@ -33,5 +53,6 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>

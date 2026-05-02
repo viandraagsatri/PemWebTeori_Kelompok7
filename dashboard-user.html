@@ -7,39 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="dashboard-user.html" class="nav-brand">SI-AKSI</a>
+        <ul class="nav-links">
+            <li><a href="dashboard-user.html" class="active">Beranda</a></li>
+            <li>
+                <a href="#">Kategori ▾</a>
+                <div class="dropdown-content">
+                    <a href="#">Hardware</a>
+                    <a href="#">Software & Internet</a>
+                    <a href="#">Cyber Security</a>
+                    <a href="#">Artificial Intelligence</a>
+                </div>
+            </li>
+            <li><a href="history.html">Riwayat Kuis</a></li>
+        </ul>
+        <div class="nav-auth">
+            <div class="nav-profile">
+                <span>Halo, Pengguna</span>
+                <div style="width: 32px; height: 32px; background: var(--accent); border-radius: 50%; display: inline-block;"></div>
+            </div>
+            <a href="index.html" class="btn-nav-login" style="color: var(--text-dark); margin-left: 15px;">Logout</a>
+        </div>
+    </nav>
 
-    <div class="login-container">
-        <div class="login-card">
+    <div class="login-container dashboard-container">
+        <div class="login-card dashboard-card">
             <h2>Dashboard Pengguna</h2>
-            <p class="subtitle">Selamat datang di SI-AKSI</p>
+            <p class="subtitle">Selamat datang kembali! Pilih topik yang ingin Anda pelajari hari ini.</p>
 
             <div class="alert-box">
-                <strong>Informasi:</strong> Pilih kategori kuis untuk meningkatkan literasi digital Anda.
+                <strong>Edukasi:</strong> Setiap kuis dilengkapi dengan penjelasan teknis untuk membantu Anda memahami fakta vs hoaks.
             </div>
-
-            <form action="quiz.html" method="POST">
-
-                <div class="input-group">
-                    <label for="kategori">Kategori Kuis</label>
-                    <select id="kategori" name="kategori" required>
-                        <option value="">-- Pilih Kategori --</option>
-                        <option>Hardware</option>
-                        <option>Software & Internet</option>
-                        <option>Cyber Security</option>
-                        <option>Artificial Intelligence</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="login-btn">Mulai Kuis</button>
-            </form>
-
-            <p class="register-link">
-                Lihat tim kami? <a href="team.html">Meet Our Team</a>
-            </p>
-
-            <p class="register-link">
-                <a href="index.html">Logout</a>
-            </p>
         </div>
     </div>
 
