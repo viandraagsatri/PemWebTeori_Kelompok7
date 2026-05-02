@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pengguna | SI-AKSI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Dashboard Pengguna</h2>
+            <p class="subtitle">Selamat datang di SI-AKSI</p>
+
+            <div class="alert-box">
+                <strong>Informasi:</strong> Pilih kategori kuis untuk meningkatkan literasi digital Anda.
+            </div>
+
+            <form action="quiz.html" method="POST">
+
+                <div class="input-group">
+                    <label for="kategori">Kategori Kuis</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option>Hardware</option>
+                        <option>Software & Internet</option>
+                        <option>Cyber Security</option>
+                        <option>Artificial Intelligence</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="login-btn">Mulai Kuis</button>
+            </form>
+
+            <p class="register-link">
+                Lihat tim kami? <a href="team.html">Meet Our Team</a>
+            </p>
+
+            <p class="register-link">
+                <a href="index.html">Logout</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
